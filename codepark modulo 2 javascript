@@ -1,0 +1,12 @@
+Alert(“CALCULADORA”)
+  num1 = Number(prompt('informe o 1º numero a ser utilizado:'));
+  operacao = prompt('informe a operação desejada: (+), (-), (*), (/):');
+  num2 = Number(prompt('informe o 2º numero a ser utilizado:'));
+ if (operacao == "+") {
+    alert(['soma','resultado = ',num1 + num2].join(''));
+  } else if (operacao == "-") {
+    alert(['subtração','resultado = ',num1 - num2].join(''));
+  } else if (operacao == "*") {
+    alert(['multiplicação','resultado = ',num1 * num2].join(''));
+  } else if (operacao == "/") {
+    alert( `divisão, resultado = ${num1 / num2}\n Resto de divisão = ${num1 % num2}`);}

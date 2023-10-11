@@ -1,0 +1,68 @@
+function obj()
+{
+ var Banco = new Object();
+ Banco.numerodaConta=123456;
+ numerodaConta= function(){
+    alert('numerodaConta: '+ Banco.numerodaConta);
+ }
+ Banco.saldo=5000;  
+ Banco.agencia="12587-9"
+ Banco.saque= function(valor){
+alert('saque realizado de:' ,valor);
+saldo= Banco.saldo-valor;
+ }
+Banco.buscarSaldo= function(){
+alert(` O saldo da conta : ${Banco.numerodaConta} é : ${banco.saldo}`);
+}
+ Banco.deposito= function(valor){
+    alert('deposito realizado de:' ,valor);
+    saldo= Banco.saldo+valor;
+ }
+}
+
+var carro = new Object();
+carro.marca = 'Ford';
+carro.modelo = 'Mustang'; 
+carro.ano = 2022;
+carro.acelerar= function(valor){
+    this.velocidade += valor+2;
+}
+carro.frear= function(valor){
+    this.velocidade -= valor-3;
+
+}
+carro.buzinar=function(valor){
+    alert('BEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEP')
+};
+
+var gato = new Object();
+gato.cor = 'Preto';
+gato.raca = 'SRD';
+gato.pelo = "longo";
+gato.fala = function(){
+    alert("miausis");}
+
+gato.correr = function(){
+    this.estado= correndo;
+gato.comer = function(){
+    this.ação= comer;
+    alert("nham, nhac, nhom");
+}
+}
+ var segurodevida = new Object();
+ segurodevida.valor = 1000000;
+ segurodevida.saldoatual = 100000;
+ segurodevida.situação = "regular";
+  segurodevida.pagar = function(valor){
+    this.saldo -= valor;
+    alert('Pagamento realizado com sucesso');
+
+}
+segurodevida.encerrar= function(){
+    this.situação = "encerrado";
+    alert('Sua conta foi encerrada');
+}
+segurodevida.reabrir= function(){
+    this.situação = "aberto";
+    alert('Sua conta foi reaberta');
+}

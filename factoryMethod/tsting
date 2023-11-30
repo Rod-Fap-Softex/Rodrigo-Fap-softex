@@ -1,0 +1,10 @@
+function createProduct(type: string): Product {
+  switch (type) {
+    case 'book':
+      return new Book();
+    case 'software':
+      return new Software();
+    default:
+      throw new Error('Invalid product type');
+  }
+}

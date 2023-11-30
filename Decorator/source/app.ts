@@ -1,4 +1,4 @@
-import { QueijoMussarelaRalado } from "./queijoMussarelaRalado";
+import { QueijoMussarelaRalado } from "./mussarela";
 import { FrangoAssado } from "./frangoAssado";
 import { Pepperoni } from "./pepperoni";
 
